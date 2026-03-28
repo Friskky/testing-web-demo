@@ -26,7 +26,7 @@ a.prototype-link {
   display: contents;
 }
 
-.image-5-5 {
+.image-7-4 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -34,74 +34,13 @@ a.prototype-link {
   height: auto;
 }
 
-.merch-4 {
+.image-7-button-3 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
 }
 
-.image-3-7 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.games-6 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.rectangle-5-10 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 58.36521911621094px;
-}
-
-.star-3-11 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  fill: rgba(250, 255, 0, 1);
-  border: none;
-  outline: none;
-}
-
-.star-5-12 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  fill: rgba(250, 255, 0, 1);
-  border: none;
-  outline: none;
-}
-
-.star-4-13 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  fill: rgba(255, 255, 255, 1);
-  border: none;
-  outline: none;
-}
-
-.logo {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.logo-8 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.image-2-15 {
+.image-8-6 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -109,52 +48,20 @@ a.prototype-link {
   height: auto;
 }
 
-.about-14 {
+.image-8-button-5 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
 }
 
-.image-6-17 {
+.bottom-2 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.faq-16 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.frame-2-3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 75px;
-  padding: 8px 26px 8px 26px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.header-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  padding: 10px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 100%;
   background-color: rgba(30, 30, 30, 1);
 }
 
-.image-7-20 {
+.copyright-7 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -162,29 +69,7 @@ a.prototype-link {
   height: auto;
 }
 
-.image-7-19 {
-@media (max-width: 1440px) {
-  .image-7-19 {
-    width: 47%;
-    min-width: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-  .image-7-19 {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-  }
-}
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 30%;
-  min-width: 280px;
-}
-
-.image-8-22 {
+.node-9 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -192,54 +77,7 @@ a.prototype-link {
   height: auto;
 }
 
-.image-8-21 {
-@media (max-width: 1440px) {
-  .image-8-21 {
-    width: 47%;
-    min-width: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-  .image-8-21 {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-  }
-}
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 30%;
-  min-width: 280px;
-}
-
-.bottom-18 {
-@media (max-width: 1440px) {
-  .bottom-18 {
-    gap: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .bottom-18 {
-    gap: 24px;
-  }
-}
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding: 0px 74px 0px 0px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 100%;
-  background-color: rgba(30, 30, 30, 1);
-}
-
-.copyright-23 {
+.fan-game-11 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -247,7 +85,7 @@ a.prototype-link {
   height: auto;
 }
 
-.node-25 {
+.available-on-12 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -255,23 +93,7 @@ a.prototype-link {
   height: auto;
 }
 
-.fan-game-27 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.available-on-28 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.available-on-26 {
+.available-on-10 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +105,7 @@ a.prototype-link {
   width: 15.052083333333332%;
 }
 
-.roblox-logo-31 {
+.roblox-logo-15 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -291,13 +113,13 @@ a.prototype-link {
   height: auto;
 }
 
-.roblox-logo-30 {
+.roblox-logo-14 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
 }
 
-.roblox-border-29 {
+.roblox-border-button-13 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -312,7 +134,7 @@ a.prototype-link {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.girlyfatesilly-1-32 {
+.girlyfatesilly-1-16 {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -320,10 +142,132 @@ a.prototype-link {
   height: auto;
 }
 
-.middle-24 {
+.middle-8 {
   flex-grow: 0;
   flex-shrink: 1;
   width: 100%;
+}
+
+.image-5-20 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.merch-button-19 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.image-3-22 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.games-button-21 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.rectangle-5-25 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 58.36521911621094px;
+}
+
+.star-3-26 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(250, 255, 0, 1);
+  border: none;
+  outline: none;
+}
+
+.star-5-27 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(250, 255, 0, 1);
+  border: none;
+  outline: none;
+}
+
+.star-4-28 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.logo {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.logo-23 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.image-2-30 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.about-button-29 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.image-6-32 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.faq-button-31 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.frame-2-18 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  padding: 8px 26px 8px 26px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.header-17 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(30, 30, 30, 1);
 }
 
 .whole-frame-1 {
