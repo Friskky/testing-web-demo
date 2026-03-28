@@ -1,7 +1,4 @@
-:root {
-}
-
-/* CSS Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -9,283 +6,83 @@
 }
 
 body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN FRAME */
+.whole-frame-1 {
   width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Prototype Links */
-a.prototype-link {
-  text-decoration: none;
-  color: inherit;
-  display: contents;
-}
-
-.image-7-4 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.image-7-button-3 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.image-8-6 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.image-8-button-5 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.bottom-2 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(30, 30, 30, 1);
-}
-
-.copyright-7 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.node-9 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.fan-game-11 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.available-on-12 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.available-on-10 {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 36px 0px 36px 0px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 15.052083333333332%;
+  background: black;
 }
 
-.roblox-logo-15 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.roblox-logo-14 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.roblox-border-button-13 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 24px 14px 24px 14px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 9.479166666666666%;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
-  background-color: rgba(30, 30, 30, 1);
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-
-.girlyfatesilly-1-16 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.middle-8 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 100%;
-}
-
-.image-5-20 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.merch-button-19 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.image-3-22 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.games-button-21 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.rectangle-5-25 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 58.36521911621094px;
-}
-
-.star-3-26 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  fill: rgba(250, 255, 0, 1);
-  border: none;
-  outline: none;
-}
-
-.star-5-27 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  fill: rgba(250, 255, 0, 1);
-  border: none;
-  outline: none;
-}
-
-.star-4-28 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  fill: rgba(255, 255, 255, 1);
-  border: none;
-  outline: none;
-}
-
-.logo {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.logo-23 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.image-2-30 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.about-button-29 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.image-6-32 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  width: 100%;
-  height: auto;
-}
-
-.faq-button-31 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
+/* HEADER */
+.header-17 {
+  background: #1e1e1e;
+  padding: 10px 0;
 }
 
 .frame-2-18 {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 75px;
-  padding: 8px 26px 8px 26px;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
+  gap: 50px;
 }
 
-.header-17 {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(30, 30, 30, 1);
+/* IMAGES */
+.image {
+  width: 100%;
+  height: auto;
 }
 
-.whole-frame-1 {
-@media (max-width: 1440px) {
-  .whole-frame-1 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+.hero-image {
+  width: 100%;
+  display: block;
 }
 
+/* MIDDLE */
+.middle-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ROBLOX BUTTON */
+.roblox-border-button-13 {
+  padding: 20px;
+  border: 1px solid white;
+  background: #1e1e1e;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.5);
+}
+
+/* AVAILABLE ON */
+.available-on-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BOTTOM */
+.bottom-2 {
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .whole-frame-1 {
-    padding-left: 16px;
-    padding-right: 16px;
+  .frame-2-18 {
+    flex-direction: column;
+    gap: 20px;
   }
-}
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  background-color: rgba(0, 0, 0, 1);
 }
