@@ -5,6 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Testing-Site</title>
   <style>
+          @font-face {
+      font-family: "Determination";
+      src: url("fonts/determination/determination.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .nav-btn {
+      font-family: "Determination", sans-serif;
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+
+
+    }
+        .nav-btn-2 {
+      font-family: "Determination", sans-serif;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      height: 25px;
+      transition: opacity 0.2s ease;
+    }
+                .nav-btn-3 {
+      font-family: "Determination", sans-serif;
+      font-size: 12px;
+      color: gray;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      height: 25px;
+    }
+
+    .nav-btn:hover {
+      opacity: 0.7;
+    }
+
+    .nav-logo:hover {
+      transform: scale(1.1);
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -29,26 +78,41 @@
     header {
       width: 100%;
       height: 60px;
-      flex-shrink: 0;
       background-color: #1e1e1e;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+    }
+
+    .header-left,
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .header-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-center img {
+      height: 60px;
     }
 
     .header-nav {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 48px;
-    }
-
-    .header-nav img[alt="FAQ"] {
-      height: 30px;
+      justify-content: space-between;
+      width: 25%;
+      max-width: 900px;
     }
 
     .header-nav img[alt="Logo"] {
-      height: 65px;
+      height: 60px;
+      display: flex;
+      align-items: center;
     }
 
     .header-nav a {
@@ -157,8 +221,8 @@
     }
 
     .hero-character {
-      max-width: 35% !important;
-      margin-top: clamp(-12px, -1.5vh, -30px);
+      max-width: 30% !important;
+      margin-top: -30px;
     }
 
     .fan-game-text img {
@@ -250,6 +314,10 @@
     }
 
       @media (max-width: 768px) {
+          
+          .faq-btn {
+              font-size: 16px;
+          }
 
           header {
               height: 50px;
@@ -316,12 +384,20 @@
 
     <header>
       <nav class="header-nav">
-        <a href="https://www.reddit.com" target="_blank"><img src="images/About_Image.png" alt="About" /></a>
-        <a href="https://www.reddit.com" target="_blank"><img src="images/Games_Image.png" alt="Games" /></a>
-        <a href="https://www.reddit.com" target="_blank"><img src="images/PFB_Logo.png" alt="Logo" /></a>
-        <a href="https://www.reddit.com" target="_blank"><img src="images/FAQ_Image.png" alt="FAQ" /></a>
-        <a href="https://www.reddit.com" target="_blank"><img src="images/Merch_Image.png" alt="Merch" /></a>
-      </nav>
+          <div class="header-left">
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">ABOUT</a>
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">GAMES</a>
+          </div>
+
+          <div class="header-center">
+            <a href="https://www.reddit.com" target="_blank"><img src="images/PFB_Logo.png" alt="Logo" /></a>
+          </div>
+
+          <div class="header-right">
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">FAQ</a>
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">MERCH</a>
+          </div>
+        </nav>
     </header>
 
     <main>
@@ -335,15 +411,14 @@
       </div>
 
       <div class="hero">
-        <img src="images/Game_Name_Text.png" alt="Game Name" />
-        <img src="images/Girly_Fate_Silly.png" alt="Girly Fate Character" class="hero-character" />
+        <img src="images/Gaster_Blaster_Logo.png" alt="Gaster Blaster Logo" class="hero-character" />
         <div class="fan-game-text">
-          <img src="images/Fan_Game_Text.png" alt="Fan Game" />
+            <span class="nav-btn-2">FAN-GAME</span>
         </div>
       </div>
 
       <div class="available-section">
-        <img src="images/Available_On_Text.png" alt="Available On" class="available-text" />
+        <span class="nav-btn-2">AVAILABLE ON</span>
         <div class="platform-logos">
           <a href="https://www.roblox.com/games/129511651687771/Undertale-Forgotten-Past-Test-Place" target="_blank" class="roblox-btn">
             <img src="images/Roblox_Logo.png" alt="Roblox" />
@@ -354,7 +429,7 @@
 
     <footer>
       <div class="footer-copyright">
-        <img src="images/Copyright_Text.png" alt="Copyright" />
+        <span class="nav-btn-3">© 2026 Project: FrostBound. All Rights Reserved. No use, distribution, or reproduction permitted. Not affiliated with Toby Fox.</span>
       </div>
       <div class="footer-socials">
           <a href="https://discord.com/invite/uqePYdcwFc" target="_blank"><img src="images/Discord_Sprite.png" alt="Discord" /></a>
