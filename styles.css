@@ -1,54 +1,63 @@
 body {
 margin: 0;
-background: #111;
-color: white;
+background: black;
 font-family: Arial, sans-serif;
+color: white;
+height: 100vh;
+display: grid;
+grid-template-rows: 136px 1fr 136px;
 }
 
-/* TOP BAR */
+/* HEADER */
 .topbar {
-display: flex;
-justify-content: center;
+background: #1e1e1e;
+width: 1920px;
+height: 136px;
+display: grid;
+grid-auto-flow: column;
 align-items: center;
-gap: 30px;
-background: #2a2a2a;
-padding: 15px 10px;
+justify-items: center;
+justify-content: center;
+gap: 40px;
+margin: 0 auto;
 }
 
 .topbar img {
-height: 40px;
+height: 45px;
 cursor: pointer;
+transition: transform 0.2s ease;
 }
 
-/* MAIN CONTENT */
+.topbar img:hover {
+transform: scale(1.05);
+}
+
+/* MIDDLE CONTENT */
 .content {
+width: 1920px;
+margin: 0 auto;
+background: black;
 display: flex;
 flex-direction: column;
 align-items: center;
-text-align: center;
-padding: 20px;
+justify-content: center;
 gap: 25px;
+text-align: center;
 }
 
-/* GAME NAME CENTER */
 .title {
-width: 300px;
-margin-top: 10px;
+width: 320px;
 }
 
-/* GIRLY FATE CENTER */
 .hero {
-width: 80%;
-max-width: 700px;
-border-radius: 10px;
+width: 70%;
+max-width: 800px;
 }
 
-/* FAN GAME */
 .game img {
-width: 220px;
+width: 240px;
 }
 
-/* AVAILABLE ON */
 .available {
 display: flex;
 flex-direction: column;
@@ -57,29 +66,34 @@ gap: 10px;
 }
 
 .platforms img {
-width: 120px;
+width: 130px;
 }
 
 /* FOOTER */
 .footer {
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-padding: 15px 20px;
-background: #2a2a2a;
-}
+background: #1e1e1e;
+width: 1920px;
+height: 136px;
+margin: 0 auto;
 
-.footer .left {
 display: flex;
-align-items: flex-end;
+align-items: center;
+justify-content: space-between;
+padding: 0 40px;
 }
 
 .footer .right {
 display: flex;
-gap: 15px;
-align-items: flex-end;
+gap: 20px;
+align-items: center;
 }
 
 .footer img {
-height: 30px;
+height: 35px;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+.footer img:hover {
+transform: scale(1.05);
 }
