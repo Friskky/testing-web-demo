@@ -1,4 +1,8 @@
 ﻿The FontStruction “Determination”
 (https://fontstruct.com/fontstructions/show/2368299) by “anonymous-1438277”
 is licensed under a Creative Commons Attribution license
+<<<<<<< HEAD
 (http://creativecommons.org/licenses/by/3.0/).
+=======
+(http://creativecommons.org/licenses/by/3.0/).
+>>>>>>> 826bf265cd4db6051608f3e6e40633735654bbd8
