@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testing-Site</title>
+  <style>
+          @font-face {
+      font-family: "Determination";
+      src: url("fonts/determination/determination.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .nav-btn {
+      font-family: "Determination", sans-serif;
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+
+
+    }
+        .nav-btn-2 {
+      font-family: "Determination", sans-serif;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      height: 25px;
+      transition: opacity 0.2s ease;
+    }
+                .nav-btn-3 {
+      font-family: "Determination", sans-serif;
+      font-size: 12px;
+      color: gray;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      height: 25px;
+    }
+
+    .nav-btn:hover {
+      opacity: 0.7;
+    }
+
+    .nav-logo:hover {
+      transform: scale(1.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background: #000;
+    }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      height: 60px;
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-left,
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .header-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-center img {
+      height: 60px;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 25%;
+      max-width: 900px;
+    }
+
+    .header-nav img[alt="Logo"] {
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-nav a {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-nav img {
+      height: 25px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .header-nav img:hover {
+      opacity: 0.75;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(30px, 7.5vh, 180px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .stars img {
+      position: absolute;
+      opacity: 0.6;
+    }
+      /*    Top Left */
+    .stars img:nth-child(1) {
+      top: 8%;
+      left: 5%;
+      width: clamp(48px, 9.3vh, 180px);
+      animation: twinkle 3s ease-in-out infinite;
+    }
+      /*    Top Right */
+    .stars img:nth-child(2) {
+      top: 8%;
+      right: 5%;
+      width: clamp(48px, 9.3vh, 180px);
+      animation: twinkle 3s ease-in-out infinite;
+    }
+    /*    Bottom Left */
+    .stars img:nth-child(3) {
+      bottom: 20%;
+      left: 10%;
+      width: clamp(42px, 7.8vh, 150px);
+      animation: twinkle 2.5s ease-in-out infinite 0.5s;
+    }
+     /*    Middle Right */
+    .stars img:nth-child(4) {
+      top: 45%;
+      right: 3%;
+      width: clamp(36px, 6.9vh, 135px);
+      animation: twinkle 2s ease-in-out infinite 0.8s;
+    }
+     /*    Middle Left */
+    .stars img:nth-child(5) {
+      top: 45%;
+      left: 3%;
+      width: clamp(36px, 6.9vh, 135px);
+      animation: twinkle 2s ease-in-out infinite 0.8s;
+    }
+      /*    Bottom Right */
+    .stars img:nth-child(6) {
+      bottom: 20%;
+      right: 10%;
+      width: clamp(42px, 7.8vh, 150px);
+      animation: twinkle 2.5s ease-in-out infinite 0.5s;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(18px, 3vh, 60px);
+      z-index: 1;
+      width: 100%;
+    }
+
+    .hero img {
+      max-width: 60%;
+      height: auto;
+    }
+
+    .hero-character {
+      max-width: 30% !important;
+      margin-top: -30px;
+    }
+
+    .fan-game-text img {
+      max-width: 100%;
+      width: 156px;
+      height: auto;
+    }
+
+    .available-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      z-index: 1;
+      margin-top: -60px;
+    }
+
+    .available-section img.available-text {
+      width: 216px;
+      height: auto;
+    }
+
+    .platform-logos {
+      display: flex;
+      align-items: center;
+    }
+
+    .roblox-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(12px, 1.5vh, 30px) clamp(18px, 2.7vh, 54px);
+      background-color: #1e1e1e;
+      border: 1px solid #fff;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .roblox-btn img {
+      height: 25px;
+      display: block;
+    }
+
+    .roblox-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.85;
+    }
+
+    footer {
+      width: 100%;
+      height: 60px;
+      flex-shrink: 0;
+      background-color: #1e1e1e;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 0 24px 5px 4px;
+    }
+
+    .footer-copyright {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .footer-copyright img {
+      height: 14px;
+    }
+
+    .footer-socials {
+      display: flex;
+      align-items: flex-end;
+      gap: 15px;
+    }
+
+    .footer-socials a {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-socials img {
+      height: 45px;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .footer-socials img:hover {
+      transform: scale(1.08);
+      opacity: 0.8;
+    }
+
+      @media (max-width: 768px) {
+          
+          .faq-btn {
+              font-size: 16px;
+          }
+
+          header {
+              height: 50px;
+          }
+
+          footer {
+              height: 50px;
+              padding: 0 12px 4px 8px;
+          }
+
+          .header-nav {
+              gap: 14px;
+          }
+
+              .header-nav img {
+                  height: 16px;
+              }
+
+                  .header-nav img[alt="Logo"] {
+                      height: 32px;
+                  }
+
+                  .header-nav img[alt="FAQ"] {
+                      height: 20px;
+                  }
+
+          .hero img {
+              width: 90%;
+          }
+
+          .hero-character {
+              width: 70% !important;
+          }
+
+          .fan-game-text img {
+              width: 40%;
+          }
+
+          .available-section {
+              gap: 16px;
+              margin-top: -30px;
+          }
+
+              .available-section img.available-text {
+                  width: 150px;
+              }
+
+          .roblox-btn img {
+              height: 20px;
+          }
+
+          .footer-socials img {
+              height: 28px;
+          }
+
+          .footer-copyright img {
+              height: 10px;
+          }
+      }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <nav class="header-nav">
+          <div class="header-left">
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">ABOUT</a>
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">GAMES</a>
+          </div>
+
+          <div class="header-center">
+            <a href="https://www.reddit.com" target="_blank"><img src="images/PFB_Logo.png" alt="Logo" /></a>
+          </div>
+
+          <div class="header-right">
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">FAQ</a>
+            <a href="https://www.reddit.com" target="_blank" class="nav-btn">MERCH</a>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="stars">
+        <img src="images/Save_Point_Sprite.png" alt="" />
+        <img src="images/Save_Point_Sprite.png" alt="" />
+        <img src="images/Save_Point_Sprite.png" alt="" />
+        <img src="images/Save_Point_Sprite.png" alt="" />
+        <img src="images/Save_Point_Sprite.png" alt="" />
+        <img src="images/Save_Point_Sprite.png" alt="" />
+      </div>
+
+      <div class="hero">
+        <img src="images/Gaster_Blaster_Logo.png" alt="Gaster Blaster Logo" class="hero-character" />
+        <div class="fan-game-text">
+            <span class="nav-btn-2">FAN-GAME</span>
+        </div>
+      </div>
+
+      <div class="available-section">
+        <span class="nav-btn-2">AVAILABLE ON</span>
+        <div class="platform-logos">
+          <a href="https://www.roblox.com/games/129511651687771/Undertale-Forgotten-Past-Test-Place" target="_blank" class="roblox-btn">
+            <img src="images/Roblox_Logo.png" alt="Roblox" />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-copyright">
+        <span class="nav-btn-3">© 2026 Project: FrostBound. All Rights Reserved. No use, distribution, or reproduction permitted. Not affiliated with Toby Fox.</span>
+      </div>
+      <div class="footer-socials">
+          <a href="https://discord.com/invite/uqePYdcwFc" target="_blank"><img src="images/Discord_Sprite.png" alt="Discord" /></a>
+          <a href="https://www.youtube.com/@Frisky_Crispy" target="_blank"><img src="images/Youtube_Sprite.png" alt="YouTube" /></a>
+          <a href="https://www.roblox.com/communities/13725812/Project-FrostBound" target="_blank"><img src="images/Roblox_Sprite.png" alt="Roblox_Groups" /></a>
+          <a href="https://steamcommunity.com/profiles/76561199074617101" target="_blank"><img src="images/Steam_Sprite.png" alt="Steam" /></a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
