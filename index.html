@@ -1,49 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Girly Fate</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Girly Fate</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      overflow-x: hidden;
+    }
+
+    .page-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      width: 1920px;
+      margin: 0 auto;
+    }
+
+    header {
+      width: 1920px;
+      height: 136px;
+      background-color: #1e1e1e;
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .header-nav {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      justify-items: center;
+      gap: 48px;
+    }
+
+    .header-nav img {
+      height: 52px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .header-nav img:hover {
+      opacity: 0.75;
+    }
+
+    .header-logo {
+      position: absolute;
+      left: 48px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .header-logo img {
+      height: 80px;
+    }
+
+    main {
+      flex: 1;
+      width: 1920px;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 0;
+      gap: 60px;
+      position: relative;
+    }
+
+    .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .stars img {
+      position: absolute;
+      opacity: 0.6;
+    }
+
+    .stars img:nth-child(1) {
+      top: 8%;
+      left: 5%;
+      width: 60px;
+      animation: twinkle 3s ease-in-out infinite;
+    }
+
+    .stars img:nth-child(2) {
+      top: 15%;
+      right: 8%;
+      width: 80px;
+      animation: twinkle 4s ease-in-out infinite 1s;
+    }
+
+    .stars img:nth-child(3) {
+      bottom: 20%;
+      left: 10%;
+      width: 50px;
+      animation: twinkle 2.5s ease-in-out infinite 0.5s;
+    }
+
+    .stars img:nth-child(4) {
+      bottom: 30%;
+      right: 6%;
+      width: 70px;
+      animation: twinkle 3.5s ease-in-out infinite 1.5s;
+    }
+
+    .stars img:nth-child(5) {
+      top: 45%;
+      left: 3%;
+      width: 45px;
+      animation: twinkle 2s ease-in-out infinite 0.8s;
+    }
+
+    .stars img:nth-child(6) {
+      top: 55%;
+      right: 4%;
+      width: 55px;
+      animation: twinkle 4.5s ease-in-out infinite 2s;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1;
+    }
+
+    .hero img {
+      max-width: 600px;
+    }
+
+    .hero-character {
+      max-width: 320px !important;
+      margin-top: -20px;
+    }
+
+    .fan-game-text img {
+      max-width: 400px;
+    }
+
+    .available-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      z-index: 1;
+    }
+
+    .available-section img.available-text {
+      max-width: 320px;
+    }
+
+    .platform-logos {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .platform-logos img {
+      height: 64px;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .platform-logos img:hover {
+      transform: scale(1.1);
+      opacity: 0.85;
+    }
+
+    footer {
+      width: 1920px;
+      height: 136px;
+      background-color: #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+    }
+
+    .footer-copyright {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-copyright img {
+      height: 28px;
+    }
+
+    .footer-socials {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .footer-socials a {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-socials img {
+      height: 56px;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .footer-socials img:hover {
+      transform: scale(1.08);
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
-<header class="topbar">
-  <a href="https://www.reddit.com" target="_blank">
-    <img src="images/Merch_Image.png" alt="Merch">
-  </a>
-  <a href="https://www.reddit.com" target="_blank">
-    <img src="images/Games_Image.png" alt="Games">
-  </a>
-  <a href="https://www.reddit.com" target="_blank">
-    <img src="images/About_Image.png" alt="About">
-  </a>
-  <a href="https://www.reddit.com" target="_blank">
-    <img src="images/FAQ_Image.png" alt="FAQ">
-  </a>
-</header>
-<main class="middle">
-  <img class="title" src="images/Game_Name_Text.png" alt="Game Name">
-  <img class="hero" src="images/Girly_Fate_Silly.png" alt="Girly Fate">
-  <img class="fan" src="images/Fan_Game_Text.png" alt="Fan Game">
-  <div class="available">
-    <img src="images/Available_On_Text.png" alt="Available On">
-    <a href="https://www.roblox.com" target="_blank">
-      <img src="images/Roblox_Logo.png" alt="Roblox">
-    </a>
+  <div class="page-wrapper">
+
+    <header>
+      <div class="header-logo">
+        <img src="images/Girly_Fate_Silly.png" alt="Girly Fate Logo" />
+      </div>
+      <nav class="header-nav">
+        <img src="images/About_Image.png" alt="About" />
+        <img src="images/Games_Image.png" alt="Games" />
+        <img src="images/FAQ_Image.png" alt="FAQ" />
+        <img src="images/Merch_Image.png" alt="Merch" />
+      </nav>
+    </header>
+
+    <main>
+      <div class="stars">
+        <img src="images/star-3-11.svg" alt="" />
+        <img src="images/star-4-13.svg" alt="" />
+        <img src="images/star-5-12.svg" alt="" />
+        <img src="images/star-3-11.svg" alt="" />
+        <img src="images/star-4-13.svg" alt="" />
+        <img src="images/star-5-12.svg" alt="" />
+      </div>
+
+      <div class="hero">
+        <img src="images/Game_Name_Text.png" alt="Game Name" />
+        <img src="images/Girly_Fate_Silly.png" alt="Girly Fate Character" class="hero-character" />
+        <div class="fan-game-text">
+          <img src="images/Fan_Game_Text.png" alt="Fan Game" />
+        </div>
+      </div>
+
+      <div class="available-section">
+        <img src="images/Available_On_Text.png" alt="Available On" class="available-text" />
+        <div class="platform-logos">
+          <img src="images/Roblox_Logo.png" alt="Roblox" />
+          <img src="images/Steam_Pixel_Art.png" alt="Steam" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-copyright">
+        <img src="images/Copyright_Text.png" alt="Copyright" />
+      </div>
+      <div class="footer-socials">
+        <a href="#"><img src="images/Youtube_Pixel_Art.png" alt="YouTube" /></a>
+        <a href="#"><img src="images/Steam_Pixel_Art.png" alt="Steam" /></a>
+      </div>
+    </footer>
+
   </div>
-</main>
-<footer class="bottom">
-  <div class="left">
-    <img src="images/Copyright_Text.png" alt="Copyright">
-  </div>
-  <div class="right">
-    <a href="https://www.youtube.com/@Frisky_Crispy" target="_blank">
-      <img src="images/Youtube_Pixel_Art.png" alt="YouTube">
-    </a>
-    <a href="https://steamcommunity.com/profiles/76561199074617101" target="_blank">
-      <img src="images/Steam_Pixel_Art.png" alt="Steam">
-    </a>
-  </div>
-</footer>
 </body>
 </html>
