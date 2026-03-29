@@ -5,6 +5,7 @@ color: white;
 font-family: Arial, sans-serif;
 }
 
+/* TOP BAR */
 .topbar {
 display: flex;
 justify-content: center;
@@ -19,29 +20,35 @@ height: 40px;
 cursor: pointer;
 }
 
+/* MAIN CONTENT */
 .content {
 display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
 padding: 20px;
-gap: 20px;
+gap: 25px;
 }
 
+/* GAME NAME CENTER */
 .title {
 width: 300px;
+margin-top: 10px;
 }
 
+/* GIRLY FATE CENTER */
 .hero {
 width: 80%;
 max-width: 700px;
 border-radius: 10px;
 }
 
+/* FAN GAME */
 .game img {
-width: 200px;
+width: 220px;
 }
 
+/* AVAILABLE ON */
 .available {
 display: flex;
 flex-direction: column;
@@ -53,17 +60,24 @@ gap: 10px;
 width: 120px;
 }
 
+/* FOOTER */
 .footer {
 display: flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-end;
 padding: 15px 20px;
 background: #2a2a2a;
+}
+
+.footer .left {
+display: flex;
+align-items: flex-end;
 }
 
 .footer .right {
 display: flex;
 gap: 15px;
+align-items: flex-end;
 }
 
 .footer img {
