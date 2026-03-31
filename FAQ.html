@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Testing-Site</title>
+  <title>Testing-Site-FAQ</title>
   <style>
           @font-face {
       font-family: "Determination";
@@ -20,7 +20,7 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      height: 60px;
+      height: 25px;
       transition: opacity 0.2s ease;
       line-height: 1;
 
@@ -28,15 +28,14 @@
     }
         .nav-btn-2 {
       font-family: "Determination", sans-serif;
-      font-size: 30px;
+      font-size: 25px;
       color: white;
       text-decoration: none;
       display: flex;
       align-items: center;
-      height: 25px;
-      transition: opacity 0.2s ease;
+      height: 10px;
     }
-                .nav-btn-3 {
+        .nav-btn-3 {
       font-family: "Determination", sans-serif;
       font-size: 12px;
       color: gray;
@@ -46,9 +45,9 @@
       height: 25px;
     }
 
-   .nav-btn:hover {
-      color: #ffff00;
-      opacity: 0.9;
+    .nav-btn:hover {
+        color: #ffff00;
+        opacity: 0.9;
     }
 
     .nav-logo:hover {
@@ -67,6 +66,11 @@
       overflow-x: hidden;
       overflow-y: auto;
       background: #000;
+      background-image: url("images/Background.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
 
     .page-wrapper {
@@ -74,6 +78,7 @@
       flex-direction: column;
       width: 100%;
       min-height: 100vh;
+      background: transparent;
     }
 
     header {
@@ -134,7 +139,7 @@
     main {
       flex: 1; 
       width: 100%;
-      background: #000;
+      background: transparent;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -164,47 +169,56 @@
       top: 8%;
       left: 5%;
       width: clamp(48px, 9.3vh, 180px);
-      animation: twinkle 3s ease-in-out infinite;
+      animation: twinkle 3s ease-in-out infinite, seamless-spin 6s linear infinite;
     }
       /*    Top Right */
     .stars img:nth-child(2) {
       top: 8%;
       right: 5%;
       width: clamp(48px, 9.3vh, 180px);
-      animation: twinkle 3s ease-in-out infinite;
+      animation: twinkle 3s ease-in-out infinite, seamless-spin 5.8s linear infinite;
     }
     /*    Bottom Left */
     .stars img:nth-child(3) {
       bottom: 20%;
       left: 10%;
       width: clamp(42px, 7.8vh, 150px);
-      animation: twinkle 2.5s ease-in-out infinite 0.5s;
+      animation: twinkle 2.5s ease-in-out infinite 0.5s, seamless-spin 5.6s linear infinite;
     }
      /*    Middle Right */
     .stars img:nth-child(4) {
       top: 45%;
       right: 3%;
       width: clamp(36px, 6.9vh, 135px);
-      animation: twinkle 2s ease-in-out infinite 0.8s;
+      animation: twinkle 2s ease-in-out infinite 0.8s, seamless-spin 5.4s linear infinite;
     }
      /*    Middle Left */
     .stars img:nth-child(5) {
       top: 45%;
       left: 3%;
       width: clamp(36px, 6.9vh, 135px);
-      animation: twinkle 2s ease-in-out infinite 0.8s;
+      animation: twinkle 2s ease-in-out infinite 0.8s, seamless-spin 5.2s linear infinite;
+
+      
     }
-      /*    Bottom Right */
+      /*  
+        Bottom Right */
     .stars img:nth-child(6) {
-      bottom: 20%;
-      right: 10%;
-      width: clamp(42px, 7.8vh, 150px);
-      animation: twinkle 2.5s ease-in-out infinite 0.5s;
+        bottom: 20%;
+        right: 10%;
+        width: clamp(42px, 7.8vh, 150px);
+        animation: 
+            twinkle 3s ease-in-out infinite, seamless-spin 5s linear infinite;
     }
 
     @keyframes twinkle {
-      0%, 100% { opacity: 0.4; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.15); }
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes seamless-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
     }
 
     .hero {
@@ -413,19 +427,9 @@
       </div>
 
       <div class="hero">
-        <img src="images/Gaster_Blaster_Logo.png" alt="Gaster Blaster Logo" class="hero-character" />
-        <div class="fan-game-text">
-            <span class="nav-btn-2">FAN-GAME</span>
-        </div>
-      </div>
-
-      <div class="available-section">
-        <span class="nav-btn-2">AVAILABLE ON</span>
-        <div class="platform-logos">
-          <a href="https://www.roblox.com/games/129511651687771/Undertale-Forgotten-Past-Test-Place" target="_blank" class="roblox-btn">
-            <img src="images/Roblox_Logo.png" alt="Roblox" />
-          </a>
-        </div>
+        <span class="nav-btn-2">FAQ:</span>
+        <span class="nav-btn-2">Q: What is Project FrostBound?</span>
+        <span class="nav-btn-2">A: Project FrostBound is an upcoming mmo-rpg game...</span>
       </div>
     </main>
 
